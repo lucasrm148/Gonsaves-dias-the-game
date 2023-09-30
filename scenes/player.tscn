@@ -1,13 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://bdu8wsih2mlgh"]
+[gd_scene load_steps=7 format=3 uid="uid://bdu8wsih2mlgh"]
 
-[ext_resource type="Script" path="res://player.gd" id="1_22dhs"]
-[ext_resource type="Texture2D" uid="uid://gvtr7birkgu1" path="res://icon.svg" id="2_3ky3o"]
+[ext_resource type="Script" path="res://player.gd" id="1_212md"]
+[ext_resource type="Texture2D" path="res://icon.svg" id="2_gs43w"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nefby"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_3ky3o")
+"texture": ExtResource("2_gs43w")
 }],
 "loop": true,
 "name": &"default",
@@ -20,8 +20,12 @@ size = Vector2(120, 124)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ml6v1"]
 size = Vector2(159, 146)
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_lbvtl"]
+a = Vector2(54, 63)
+b = Vector2(-60, 63)
+
 [node name="player" type="Node2D"]
-script = ExtResource("1_22dhs")
+script = ExtResource("1_212md")
 
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -1)
@@ -29,6 +33,7 @@ sprite_frames = SubResource("SpriteFrames_nefby")
 
 [node name="CharacterBody2D(colizão)" type="CharacterBody2D" parent="AnimatedSprite"]
 process_mode = 3
+visible = false
 disable_mode = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite/CharacterBody2D(colizão)"]
@@ -36,7 +41,15 @@ position = Vector2(0, -4)
 shape = SubResource("RectangleShape2D_ayr85")
 
 [node name="Area_de_detequição" type="Area2D" parent="AnimatedSprite"]
+visible = false
 
 [node name="formato" type="CollisionShape2D" parent="AnimatedSprite/Area_de_detequição"]
 position = Vector2(2.5, -5)
 shape = SubResource("RectangleShape2D_ml6v1")
+
+[node name="Area2D" type="Area2D" parent="AnimatedSprite"]
+position = Vector2(0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite/Area2D"]
+position = Vector2(4, 4)
+shape = SubResource("SegmentShape2D_lbvtl")
