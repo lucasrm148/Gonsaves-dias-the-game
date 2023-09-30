@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://qtypcoq15tkw"]
+
+[ext_resource type="Texture2D" uid="uid://ctmpfwax8g1ng" path="res://imagens/WhatsApp Image 2023-09-30 at 11.54.41.jpeg" id="1_vo81s"]
+[ext_resource type="PackedScene" uid="uid://bdu8wsih2mlgh" path="res://scenes/player.tscn" id="2_1b2qf"]
+
+[node name="cenarioFloresta" type="Node2D"]
+
+[node name="WhatsAppImage2023-09-30At11_54_41" type="Sprite2D" parent="."]
+position = Vector2(296, 298)
+texture = ExtResource("1_vo81s")
+
+[node name="WhatsAppImage2023-09-30At11_54_41" type="Sprite2D" parent="WhatsAppImage2023-09-30At11_54_41"]
+position = Vector2(597, 5)
+texture = ExtResource("1_vo81s")
+
+[node name="WhatsAppImage2023-09-30At11_54_42" type="Sprite2D" parent="."]
+position = Vector2(1455, 288)
+texture = ExtResource("1_vo81s")
+
+[node name="player" parent="." instance=ExtResource("2_1b2qf")]
+position = Vector2(265, 309)

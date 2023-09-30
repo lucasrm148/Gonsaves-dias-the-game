@@ -1,5 +1,4 @@
 res://scenes/cenario.tscn
-res://scenes/player.tscn
 res://scenes/cobra.tscn
 res://scenes/folha.tscn
-res://scripts/player.gd
+res://scenes/cenarioFloresta.tscn
