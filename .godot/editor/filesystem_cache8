@@ -1,26 +1,32 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1696087281
-caption.jpg::CompressedTexture2D::2449484540760823299::1696087238::1696087238::1::::<><>::
-icon.svg::CompressedTexture2D::465670658701006458::1696087238::1696087238::1::::<><>::
-palmeira.tscn::PackedScene::6102205565208007334::1696087238::0::1::::<><>::uid://ba5swgklqxegp::::res://caption.jpg
-README.md::TextFile::-1::1696087238::0::1::::<><>::
-teste.tscn::PackedScene::8047905904679808932::1696087238::0::1::::<><>::res://Node2D.gd<>uid://gvtr7birkgu1::::res://icon.svg
-::res://imagens/::1696087238
-41fbc7e4-8831-49b8-86e9-81235e0afeed-PhotoRoom.jpg::CompressedTexture2D::7536412228314428615::1696087238::1696087281::1::::<><>::
-f88afa3c-1844-4c82-b439-ff6685e7d902-PhotoRoom.png::CompressedTexture2D::5083837197421329427::1696087238::1696087281::1::::<><>::
-WhatsApp Image 2023-09-30 at 11.54.41 (1).jpeg::CompressedTexture2D::1371120253284093881::1696087238::1696087281::1::::<><>::
-WhatsApp Image 2023-09-30 at 11.54.41.jpeg::CompressedTexture2D::6132122770021639496::1696087238::1696087281::1::::<><>::
-::res://music/::1696087238
-1 audio.mp3::AudioStreamMP3::5407970682045324740::1696087238::1696087238::1::::<><>::
-2 audio.mp3::AudioStreamMP3::3954970981113810913::1696087238::1696087238::1::::<><>::
-3 audio.mp3::AudioStreamMP3::1687949295152746102::1696087238::1696087238::1::::<><>::
-4 audio.mp3::AudioStreamMP3::7586673510971423586::1696087238::1696087238::1::::<><>::
-5 audio.mp3::AudioStreamMP3::5585286218830810182::1696087238::1696087238::1::::<><>::
-6 audio.mp3::AudioStreamMP3::2095173512246104774::1696087238::1696087238::1::::<><>::
-7.mp3::AudioStreamMP3::6865324316569136645::1696087238::1696087238::1::::<><>::
-::res://scenes/::1696087238
-cobra.tscn::PackedScene::6785068442273509323::1696087238::0::1::::<><>::
-folha.tscn::PackedScene::6456398010942978578::1696087238::0::1::::<><>::uid://gvtr7birkgu1::::res://icon.svg
-player.tscn::PackedScene::2640318676048946287::1696087238::0::1::::<><>::res://scripts/player.gd<>uid://gvtr7birkgu1::::res://icon.svg
-::res://scripts/::1696087238
-player.gd::GDScript::-1::1696087238::0::1::::<>Node2D<>::
+::res://::1696105992
+caption.jpg::CompressedTexture2D::2449484540760823299::1696047109::1696047241::1::::<><>::
+export_presets.cfg::TextFile::-1::1696105715::0::1::::<><>::
+icon.svg::CompressedTexture2D::465670658701006458::1696046406::1696046415::1::::<><>::
+palmeira.tscn::PackedScene::6102205565208007334::1696097410::0::1::::<><>::uid://ba5swgklqxegp
+README.md::TextFile::-1::1696052960::0::1::::<><>::
+teste.tscn::PackedScene::8047905904679808932::1696047432::0::1::::<><>::res://Node2D.gd<>uid://gvtr7birkgu1
+::res://imagens/::1696097443
+41fbc7e4-8831-49b8-86e9-81235e0afeed-PhotoRoom.jpg::CompressedTexture2D::7536412228314428615::1696087112::1696097412::1::::<><>::
+DreamShaper_v7_brazilian_indian_walking_side_view_sheep_sprite_2-PhotoRoom.png::CompressedTexture2D::7750313838230230504::1696097412::1696097443::1::::<><>::
+f88afa3c-1844-4c82-b439-ff6685e7d902-PhotoRoom.png::CompressedTexture2D::5083837197421329427::1696087112::1696097412::1::::<><>::
+WhatsApp Image 2023-09-30 at 11.54.41 (1).jpeg::CompressedTexture2D::1371120253284093881::1696087112::1696097412::1::::<><>::
+WhatsApp Image 2023-09-30 at 11.54.41.jpeg::CompressedTexture2D::6132122770021639496::1696087112::1696097412::1::::<><>::
+::res://music/::1696087112
+1 audio.mp3::AudioStreamMP3::5407970682045324740::1696086644::1696087112::1::::<><>::
+2 audio.mp3::AudioStreamMP3::3954970981113810913::1696086644::1696087112::1::::<><>::
+3 audio.mp3::AudioStreamMP3::1687949295152746102::1696086645::1696087112::1::::<><>::
+4 audio.mp3::AudioStreamMP3::7586673510971423586::1696086645::1696087112::1::::<><>::
+5 audio.mp3::AudioStreamMP3::5585286218830810182::1696086645::1696087112::1::::<><>::
+6 audio.mp3::AudioStreamMP3::2095173512246104774::1696086645::1696087112::1::::<><>::
+7.mp3::AudioStreamMP3::6865324316569136645::1696086645::1696087112::1::::<><>::
+::res://scenes/::1696105764
+cenario.gd::GDScript::-1::1696103839::0::1::::<>Node2D<>::
+cenario.tscn::PackedScene::1859577706064807353::1696105764::0::1::::<><>::res://scenes/cenario.gd<>uid://tsgfdxmml4k0::::res://imagens/WhatsApp Image 2023-09-30 at 11.54.41 (1).jpeg<>uid://bdu8wsih2mlgh::::res://scenes/player.tscn<>uid://ceowb5upj6vct::::res://imagens/f88afa3c-1844-4c82-b439-ff6685e7d902-PhotoRoom.png<>uid://cjbwqs814m6ii::::res://music/1 audio.mp3<>uid://bwl22aeo0mq4x::::res://music/2 audio.mp3<>uid://ybwjpxp3fdko::::res://music/3 audio.mp3
+cobra.tscn::PackedScene::6785068442273509323::1696100387::0::1::::<><>::
+folha.tscn::PackedScene::6456398010942978578::1696100387::0::1::::<><>::uid://gvtr7birkgu1::::res://icon.svg
+player.tscn::PackedScene::2640318676048946287::1696105764::0::1::::<><>::res://scripts/player.gd<>uid://dioksij1ane8o::::res://imagens/DreamShaper_v7_brazilian_indian_walking_side_view_sheep_sprite_2-PhotoRoom.png
+player_2.gd::GDScript::-1::1696105665::0::1::::<>RefCounted<>::
+player_2.tscn::PackedScene::405751994915537586::1696105764::0::1::::<><>::res://scenes/player_2.gd<>uid://gvtr7birkgu1::::res://icon.svg
+::res://scripts/::1696105764
+player.gd::GDScript::-1::1696105764::0::1::::<>CharacterBody2D<>::

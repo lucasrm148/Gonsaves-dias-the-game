@@ -1,5 +1,7 @@
 res://scenes/cenario.tscn
-res://scenes/player.tscn
-res://scenes/cobra.tscn
-res://scenes/folha.tscn
 res://scripts/player.gd
+res://scenes/player.tscn
+res://scenes/player_2.tscn
+res://scenes/player_2.gd
+res://node_2d.tscn
+res://node_2d.gd

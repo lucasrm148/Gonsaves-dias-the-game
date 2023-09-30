@@ -1,44 +1,54 @@
-[gd_scene load_steps=7 format=3 uid="uid://bdu8wsih2mlgh"]
+[gd_scene load_steps=10 format=3 uid="uid://bdu8wsih2mlgh"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_x1yyw"]
-[ext_resource type="Texture2D" uid="uid://gvtr7birkgu1" path="res://icon.svg" id="2_gs43w"]
+[ext_resource type="Texture2D" uid="uid://dioksij1ane8o" path="res://imagens/DreamShaper_v7_brazilian_indian_walking_side_view_sheep_sprite_2-PhotoRoom.png" id="2_2tsqi"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_nefby"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_48c0u"]
+atlas = ExtResource("2_2tsqi")
+region = Rect2(306, 0, 153, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a2bty"]
+atlas = ExtResource("2_2tsqi")
+region = Rect2(459, 0, 153, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8dyxh"]
+atlas = ExtResource("2_2tsqi")
+region = Rect2(612, 0, 153, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gr172"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_gs43w")
+"texture": SubResource("AtlasTexture_48c0u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a2bty")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8dyxh")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_ayr85"]
-size = Vector2(120, 124)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ml6v1"]
 size = Vector2(159, 146)
 
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_lbvtl"]
-a = Vector2(54, 63)
-b = Vector2(-86, 64)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xiv4g"]
+size = Vector2(135, 20)
 
-[node name="player" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ayr85"]
+size = Vector2(120, 124)
+
+[node name="player" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_x1yyw")
 
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -1)
-sprite_frames = SubResource("SpriteFrames_nefby")
-
-[node name="CharacterBody2D(colizão)" type="CharacterBody2D" parent="AnimatedSprite"]
-process_mode = 3
-visible = false
-disable_mode = 2
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite/CharacterBody2D(colizão)"]
-position = Vector2(0, -4)
-shape = SubResource("RectangleShape2D_ayr85")
+sprite_frames = SubResource("SpriteFrames_gr172")
+frame_progress = 0.775793
 
 [node name="Area_de_detequição" type="Area2D" parent="AnimatedSprite"]
 
@@ -50,8 +60,14 @@ shape = SubResource("RectangleShape2D_ml6v1")
 position = Vector2(0, 16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatedSprite/Area2D"]
-position = Vector2(23, 6)
-shape = SubResource("SegmentShape2D_lbvtl")
+position = Vector2(-3.5, 116)
+shape = SubResource("RectangleShape2D_xiv4g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 65023
+visibility_layer = 294399
+position = Vector2(0, -5)
+shape = SubResource("RectangleShape2D_ayr85")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
