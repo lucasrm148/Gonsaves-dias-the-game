@@ -3,6 +3,7 @@ var velocidade= 30
 var salto = 30 
 var move_teste =false
 var direction = 1
+var solo = false
 @onready var texture :=$AnimatedSprite
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -29,11 +30,21 @@ func move(delta):
 		$AnimatedSprite.scale.x = -1
 		move_teste = true
 		
-	if Input.is_action_pressed("ui_up"):#pulo
+	if Input.is_action_pressed("ui_up") and solo:#pulo
 		position.y-= salto*delta 
 		texture.play("default")
 		move_teste =true
-	
+		false
+	else: 
+		position.y+= salto*delta 
+		texture.play("default")
+		move_teste =true
+		
 	if !move_teste:# parado 
 		texture.play("default")#para a animação quando parado
 		
+
+
+func _on_area_2d_body_entered(body):
+	solo = true
+	pass # Replace with function body.

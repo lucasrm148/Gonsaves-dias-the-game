@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx8r6xlktiog5"]
+
+[ext_resource type="Texture2D" uid="uid://gvtr7birkgu1" path="res://icon.svg" id="1_qy5bx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o8sla"]
+size = Vector2(56, 14)
+
+[node name="folha" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(27.5, 6)
+scale = Vector2(0.460938, 0.109375)
+texture = ExtResource("1_qy5bx")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Sprite2D"]
+position = Vector2(-59.661, -54.8572)
+scale = Vector2(2.16949, 9.14286)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/RigidBody2D"]
+position = Vector2(28, 6)
+shape = SubResource("RectangleShape2D_o8sla")

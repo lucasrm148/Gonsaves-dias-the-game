@@ -1,4 +1,4 @@
-res://Node2D.gd
-res://teste.tscn
-res://player.gd
 res://scenes/player.tscn
+res://scripts/player.gd
+res://palmeira.tscn
+res://scenes/folha.tscn
