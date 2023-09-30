@@ -1,5 +1,5 @@
 extends Node2D
-var velocidade= 30 
+var velocidade= 350 
 var salto = 30 
 var move_teste =false
 var direction = 1
@@ -36,7 +36,7 @@ func move(delta):
 		move_teste =true
 		false
 	else: 
-		position.y+= salto*delta 
+		#position.y+= salto*delta 
 		texture.play("default")
 		move_teste =true
 		
