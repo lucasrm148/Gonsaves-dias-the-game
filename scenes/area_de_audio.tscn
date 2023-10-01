@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://b882736yvysug"]
+
+[ext_resource type="Script" path="res://area de audio.gd" id="1_r8jsf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ujpsp"]
+size = Vector2(492, 208)
+
+[node name="area de audio" type="Area2D"]
+disable_mode = 2
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_r8jsf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 2
+visibility_layer = 2
+position = Vector2(236, 94)
+shape = SubResource("RectangleShape2D_ujpsp")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+area_mask = 3
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -1,6 +1,8 @@
-res://scenes/cenario.tscn::96febe65b9544452d6b94be00e7a778b::1696106044::res://.godot/exported/133200997/export-48585dd334201e4260635584c33858ff-cenario.scn
+res://scenes/cenario.tscn::beed1f4b8ad996f0f9afab7069e32a80::1696149738::res://.godot/exported/133200997/export-48585dd334201e4260635584c33858ff-cenario.scn
 res://scenes/cobra.tscn::a8bedd3c3a11ae016ea861bd6935a08f::1696100387::res://.godot/exported/133200997/export-1b563306f11fce7ae642879268f0d879-cobra.scn
 res://scenes/folha.tscn::9335f20eff9715854409ed1dd9950282::1696100387::res://.godot/exported/133200997/export-40baabd6806692df21cbdc7a4d4cb8ab-folha.scn
-res://scenes/player.tscn::bbf8d38db913aaba5025679fc78c1755::1696106044::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
-res://scenes/player_2.tscn::4c30b8dd024f8134c39e3180e402f5fa::1696106044::res://.godot/exported/133200997/export-6b3fe710cf4b159ca1c17d619b8227b0-player_2.scn
-res://palmeira.tscn::8190e44dede00ad89f505b05047e997d::1696097410::res://.godot/exported/133200997/export-70676a655a198afdf1ff469e47bf2f28-palmeira.scn
+res://scenes/player_2.tscn::a24e4b5e41292136cf5fc1437737e559::1696149738::res://.godot/exported/133200997/export-6b3fe710cf4b159ca1c17d619b8227b0-player_2.scn
+res://scenes/cenarioIndio.tscn::354aae73736b1b9a15b4a5c1e0641474::1696107324::res://.godot/exported/133200997/export-1cbdcaa292b688e83e9c371956df5700-cenarioIndio.scn
+res://scenes/cenarioPraia.tscn::b2419ba30962c282019f3f4e88d6b199::1696107324::res://.godot/exported/133200997/export-6359186ff29889ee53ab4b50226e7aa6-cenarioPraia.scn
+res://scenes/area_de_audio.tscn::3f39cec281a62f03a2c3dd738b089d10::1696149738::res://.godot/exported/133200997/export-1c0af6207fc8e6e94bdbad6f20355636-area_de_audio.scn
+res://scenes/fall.tscn::791bd8846ffe135401a1cf25172330d0::1696149738::res://.godot/exported/133200997/export-84b89a3d9b7c3bf90f16ba9058aaa207-fall.scn
