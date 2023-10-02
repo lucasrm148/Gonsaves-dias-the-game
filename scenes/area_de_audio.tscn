@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b882736yvysug"]
 
-[ext_resource type="Script" path="res://area de audio.gd" id="1_r8jsf"]
+[ext_resource type="Script" path="res://scenes/area de audio.gd" id="1_hhugo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ujpsp"]
 size = Vector2(492, 208)
@@ -9,7 +9,7 @@ size = Vector2(492, 208)
 disable_mode = 2
 collision_layer = 3
 collision_mask = 3
-script = ExtResource("1_r8jsf")
+script = ExtResource("1_hhugo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 light_mask = 2

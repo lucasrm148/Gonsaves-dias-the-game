@@ -1,10 +1,5 @@
-res://scenes/cenario.tscn
-res://scripts/player.gd
-res://scenes/player_2.gd
-res://scenes/player.tscn
-res://scenes/player_2.tscn
-res://node_2d.tscn
-res://scenes/cenario.gd
-res://area de audio.gd
 res://scenes/area_de_audio.tscn
+res://scripts/player.gd
+res://scenes/cenario.tscn
+res://scenes/player_2.tscn
 res://scenes/fall.tscn
