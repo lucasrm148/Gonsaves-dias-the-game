@@ -3,11 +3,13 @@ extends CharacterBody2D
 @export var speed = 100
 @export var gravite = 7
 @export var jump= 107
+var sentido = 1
+var sentido2 = 1
 var target_velocity = Vector2.ZERO
 var direction = Vector2.ZERO
 var velocidade= Vector2.ZERO
 var salto = true
-func _ready():
+func _ready(): 
 	pass # Replace with function body.
 
 
@@ -19,12 +21,11 @@ func _physics_process(delta):
 
 func get_input():
 	animando("walk")
-	#var input_direction = Input.get_vector("ui_left","ui_right","ui_up",'ui_down')
 	if Input.is_action_pressed('ui_right'):
 		velocity.x=speed
-		scale.x = 0.6
+		sentido = 1
 	elif Input.is_action_pressed('ui_left'):
-		scale.x = -0.6
+		sentido = -1
 		velocity.x=-speed
 	if Input.is_action_just_pressed('ui_up') and salto:
 		salto = false
@@ -35,12 +36,13 @@ func get_input():
 		elif velocity.x <0:
 			velocity.x+=1
 	velocity.y+= gravite
-	
-
+	if sentido != sentido2:
+		sentido2 = sentido
+		scale.x *= -1
 
 
 func animando(animação_nome=""):
-	$AnimatedSprite2D.play(animação_nome)
+	$CollisionShape2D2/AnimatedSprite2D.play("walk")
 	pass
 
 

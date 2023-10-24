@@ -1,20 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1696252716
-area de audio.gd::GDScript::-1::1696146778::0::1::::<>Area2D<>::
-caption.jpg::CompressedTexture2D::2449484540760823299::1696047109::1696047241::1::::<><>::
+::res://::1698151427
 export_presets.cfg::TextFile::-1::1696150352::0::1::::<><>::
 icon.svg::CompressedTexture2D::465670658701006458::1696046406::1696046415::1::::<><>::
+livro_song.gd::GDScript::-1::1698070471::0::1::::<>Area2D<>::
 README.md::TextFile::-1::1696052960::0::1::::<><>::
-teste.tscn::PackedScene::8047905904679808932::1696047432::0::1::::<><>::res://Node2D.gd<>uid://gvtr7birkgu1
-::res://imagens/::1696126146
+::res://imagens/::1698155699
 41fbc7e4-8831-49b8-86e9-81235e0afeed-PhotoRoom.jpg::CompressedTexture2D::7536412228314428615::1696087112::1696097412::1::::<><>::
 b18d5ac0-4765-49a0-be07-f89b1036aaae.jpeg::CompressedTexture2D::647608519362617804::1696107324::1696107324::1::::<><>::
-DreamShaper_v7_brazilian_indian_walking_side_view_sheep_sprite_2-PhotoRoom.png::CompressedTexture2D::7750313838230230504::1696097412::1696107410::1::::<><>::
-enjoyacademy1_Side-view_sprite_sheet_specifically_designed_for__0f4cff08-faa2-4a69-9a51-6faf74e54e31-PhotoRoom.png-PhotoRoom.png::CompressedTexture2D::5523292620076053765::1696126140::1696126146::1::::<><>::
-enjoyacademy1_Side-view_sprite_sheet_specifically_designed_for__0f4cff08-faa2-4a69-9a51-6faf74e54e31.png::CompressedTexture2D::1198832994468603542::1696107324::1696107324::1::::<><>::
 f88afa3c-1844-4c82-b439-ff6685e7d902-PhotoRoom.png::CompressedTexture2D::5083837197421329427::1696087112::1696097412::1::::<><>::
+image-removebg-preview.png::CompressedTexture2D::6361864892511857473::1698154024::1698154078::1::::<><>::
+tile edit 1 .png::CompressedTexture2D::4559291733092664314::1698155699::1698155705::1::::<><>::
 WhatsApp Image 2023-09-30 at 11.54.41 (1).jpeg::CompressedTexture2D::1371120253284093881::1696087112::1696097412::1::::<><>::
 WhatsApp Image 2023-09-30 at 11.54.41.jpeg::CompressedTexture2D::6132122770021639496::1696087112::1696097412::1::::<><>::
+_2bb6d207-3625-4904-80dc-ffa616e836dc-removebg-preview.png::CompressedTexture2D::7981990553724125789::1698067373::1698069058::1::::<><>::
+_9a566502-5d4e-4d32-83fe-77d5b598d43a-removebg-preview-removebg-preview.png::CompressedTexture2D::5576865550030170897::1697674320::1697674324::1::::<><>::
+_9a566502-5d4e-4d32-83fe-77d5b598d43a-removebg-preview.png::CompressedTexture2D::6706787466681320636::1697673898::1697673943::1::::<><>::
 ::res://music/::1696087112
 1 audio.mp3::AudioStreamMP3::5407970682045324740::1696086644::1696087112::1::::<><>::
 2 audio.mp3::AudioStreamMP3::3954970981113810913::1696086644::1696087112::1::::<><>::
@@ -23,17 +23,19 @@ WhatsApp Image 2023-09-30 at 11.54.41.jpeg::CompressedTexture2D::613212277002163
 5 audio.mp3::AudioStreamMP3::5585286218830810182::1696086645::1696087112::1::::<><>::
 6 audio.mp3::AudioStreamMP3::2095173512246104774::1696086645::1696087112::1::::<><>::
 7.mp3::AudioStreamMP3::6865324316569136645::1696086645::1696087112::1::::<><>::
-::res://scenes/::1696150792
-area_de_audio.tscn::PackedScene::4772475013504012486::1696256415::0::1::::<><>::res://area de audio.gd
+::res://scenes/::1698151525
+area de audio.gd::GDScript::-1::1696146778::0::1::::<>Area2D<>::
+area_de_audio.tscn::PackedScene::4772475013504012486::1698069824::0::1::::<><>::res://scenes/area de audio.gd
+book_song.tscn::PackedScene::2489073108135294853::1698151525::0::1::::<><>::res://livro_song.gd<>uid://dlyshojtgl6eb::::res://imagens/_2bb6d207-3625-4904-80dc-ffa616e836dc-removebg-preview.png
 cenario.gd::GDScript::-1::1696148313::0::1::::<>Node2D<>::
-cenario.tscn::PackedScene::1859577706064807353::1696150792::0::1::::<><>::res://scenes/cenario.gd<>uid://tsgfdxmml4k0::::res://imagens/WhatsApp Image 2023-09-30 at 11.54.41 (1).jpeg<>uid://ceowb5upj6vct::::res://imagens/f88afa3c-1844-4c82-b439-ff6685e7d902-PhotoRoom.png<>uid://c5xc2qanm7smj::::res://scenes/fall.tscn<>uid://b882736yvysug::::res://scenes/area_de_audio.tscn<>uid://f1sw8sptedwk::::res://scenes/player_2.tscn
+cenario.tscn::PackedScene::1859577706064807353::1698151525::0::1::::<><>::res://scenes/cenario.gd<>uid://tsgfdxmml4k0::::res://imagens/WhatsApp Image 2023-09-30 at 11.54.41 (1).jpeg<>uid://ceowb5upj6vct::::res://imagens/f88afa3c-1844-4c82-b439-ff6685e7d902-PhotoRoom.png<>uid://c5xc2qanm7smj::::res://scenes/fall.tscn<>uid://b882736yvysug::::res://scenes/area_de_audio.tscn<>uid://f1sw8sptedwk::::res://scenes/player_2.tscn<>uid://bbpyw2axtcvar::::res://scenes/book_song.tscn
 cenarioFloresta.tscn::PackedScene::1163728797707497542::1696107324::0::1::::<><>::uid://ctmpfwax8g1ng
 cenarioIndio.tscn::PackedScene::6242221365151224203::1696107324::0::1::::<><>::
 cenarioPraia.tscn::PackedScene::3125626531220698374::1696107324::0::1::::<><>::
 cobra.tscn::PackedScene::6785068442273509323::1696100387::0::1::::<><>::
-fall.tscn::PackedScene::6926157856273091401::1696149738::0::1::::<><>::
+fall.tscn::PackedScene::6926157856273091401::1698151525::0::1::::<><>::
 folha.tscn::PackedScene::6456398010942978578::1696100387::0::1::::<><>::uid://gvtr7birkgu1
-player_2.gd::GDScript::-1::1696147580::0::1::::<>CharacterBody2D<>::
-player_2.tscn::PackedScene::405751994915537586::1696149738::0::1::::<><>::res://scenes/player_2.gd<>uid://ckxr272elijyb::::res://imagens/enjoyacademy1_Side-view_sprite_sheet_specifically_designed_for__0f4cff08-faa2-4a69-9a51-6faf74e54e31-PhotoRoom.png-PhotoRoom.png
-::res://scripts/::1696123547
-player.gd::GDScript::-1::1696256415::0::1::::<>CharacterBody2D<>::
+player_2.gd::GDScript::-1::1697675726::0::1::::<>CharacterBody2D<>::
+player_2.tscn::PackedScene::405751994915537586::1698151525::0::1::::<><>::res://scenes/player_2.gd<>uid://clpqfp5241j02::::res://imagens/_9a566502-5d4e-4d32-83fe-77d5b598d43a-removebg-preview-removebg-preview.png
+::res://scripts/::1698151447
+player.gd::GDScript::-1::1698151447::0::1::::<>CharacterBody2D<>::

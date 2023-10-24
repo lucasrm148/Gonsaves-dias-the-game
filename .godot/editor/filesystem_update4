@@ -1,5 +1,6 @@
-res://scenes/area_de_audio.tscn
+res://scenes/player_2.tscn
 res://scripts/player.gd
 res://scenes/cenario.tscn
-res://scenes/player_2.tscn
 res://scenes/fall.tscn
+res://scenes/book_song.tscn
+res://scenes/cenario.gd

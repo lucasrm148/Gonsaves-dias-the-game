@@ -11,5 +11,7 @@ func _process(delta):
 	pass
 
 func _on_fall_body_entered(body):
-	get_tree().reload_current_scene()
+	if !body.name == $Control/plataforma.name:
+		print(body)
+		get_tree().reload_current_scene()
 	pass # Replace with function body.
