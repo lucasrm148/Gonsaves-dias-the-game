@@ -1,3 +1,67 @@
-[gd_scene format=3 uid="uid://c3w0c6lr2xuqt"]
+[gd_scene load_steps=4 format=3 uid="uid://c3w0c6lr2xuqt"]
 
-[node name="Cobra" type="Node2D"]
+[ext_resource type="Script" path="res://scripts/cobra.gd" id="1_3qdxu"]
+[ext_resource type="Texture2D" uid="uid://bfsdiqxgrif31" path="res://imagens/Snake_sprite_sheet-removebg-preview.png" id="1_ta8wc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a5e3d"]
+size = Vector2(245, 30)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(-7, 19)
+collision_layer = 8
+collision_mask = 8
+safe_margin = 0.001
+script = ExtResource("1_3qdxu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(112.5, -11)
+shape = SubResource("RectangleShape2D_a5e3d")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(7, -19)
+
+[node name="Corpo" type="Node2D" parent="."]
+position = Vector2(-6, 4)
+rotation = -1.5708
+
+[node name="cabeça" type="Polygon2D" parent="Corpo"]
+position = Vector2(-5, 204)
+texture = ExtResource("1_ta8wc")
+polygon = PackedVector2Array(11.9874, 2.2082, 10.4101, 6.94006, 4.4164, 8.20189, 9.46372, 29.9685, 11.6719, 34.7003, 21.7666, 36.9085, 29.653, 34.7003, 31.5457, 28.3912, 37.224, 23.3438, 40.694, 19.8738, 39.7476, 12.6183, 35.9621, 8.51735, 30.2839, 4.4164, 30.9148, 0.630915)
+uv = PackedVector2Array(11.9874, 2.2082, 10.4101, 6.94006, 4.4164, 8.20189, 9.46372, 29.9685, 11.6719, 34.7003, 21.7666, 36.9085, 29.653, 34.7003, 31.5457, 28.3912, 37.224, 23.3438, 40.694, 19.8738, 39.7476, 12.6183, 35.9621, 8.51735, 30.2839, 4.4164, 30.9148, 0.630915)
+bones = ["cabeça", PackedFloat32Array(0.73, 0.73, 0.73, 0.73, 0.73, 0.73, 0.73, 0.73, 0.73, 0.73, 0, 0.73, 0.73, 0.73, 0.73), "cabeça/segmeto 1", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "cabeça/segmeto 1/segmeto 2", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "cabeça/segmeto 1/segmeto 2/segmeto 3", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "cabeça/segmeto 1/segmeto 2/segmeto 3/segmeto 4", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "cabeça/segmeto 1/segmeto 2/segmeto 3/segmeto 4/segmeto 5", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0), "cabeça/segmeto 1/segmeto 2/segmeto 3/segmeto 4/segmeto 5/Bone2D", PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)]
+
+[node name="Segmento 1" type="Polygon2D" parent="Corpo"]
+position = Vector2(-87.2584, 79.4719)
+texture = ExtResource("1_ta8wc")
+polygon = PackedVector2Array(93.2584, 84.8315, 93.8202, 123.034, 115.73, 124.157, 114.607, 84.2697)
+uv = PackedVector2Array(93.2584, 84.8315, 93.8202, 123.034, 115.73, 124.157, 114.607, 84.2697)
+
+[node name="Segmento 2" type="Polygon2D" parent="Corpo"]
+position = Vector2(-88.2584, 38.4719)
+texture = ExtResource("1_ta8wc")
+polygon = PackedVector2Array(93.2584, 84.8315, 93.8202, 123.034, 115.73, 124.157, 114.607, 84.2697)
+uv = PackedVector2Array(93.2584, 84.8315, 93.8202, 123.034, 115.73, 124.157, 114.607, 84.2697)
+
+[node name="Segmento 3" type="Polygon2D" parent="Corpo"]
+position = Vector2(-89.2584, -3.52808)
+texture = ExtResource("1_ta8wc")
+polygon = PackedVector2Array(93.2584, 84.8315, 93.8202, 123.034, 115.73, 124.157, 114.607, 84.2697)
+uv = PackedVector2Array(93.2584, 84.8315, 93.8202, 123.034, 115.73, 124.157, 114.607, 84.2697)
+
+[node name="Segmento 4" type="Polygon2D" parent="Corpo"]
+position = Vector2(-90.2584, -47.5281)
+texture = ExtResource("1_ta8wc")
+polygon = PackedVector2Array(93.2584, 84.8315, 93.6067, 108.515, 93.8202, 123.034, 115.73, 124.157, 114.607, 84.2697)
+uv = PackedVector2Array(93.2584, 84.8315, 93.8202, 123.034, 115.73, 124.157, 114.607, 84.2697)
+
+[node name="Segmento 5" type="Polygon2D" parent="Corpo"]
+position = Vector2(75.7416, 121.472)
+rotation = 3.14159
+texture = ExtResource("1_ta8wc")
+polygon = PackedVector2Array(53.9326, 88.2022, 70.2247, 86.5169, 71.0111, 102.051, 71.9101, 117.978, 62.3595, 122.472, 56.1798, 119.663, 54, 112)
+uv = PackedVector2Array(53.9326, 88.2022, 70.2247, 86.5169, 71.9101, 117.978, 62.3595, 122.472, 56.1798, 119.663)
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

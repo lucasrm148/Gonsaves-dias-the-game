@@ -1,0 +1,67 @@
+[gd_scene load_steps=9 format=3 uid="uid://bi28ycyu04c7f"]
+
+[ext_resource type="Script" path="res://scripts/porco espinho.gd" id="1_pwvxa"]
+[ext_resource type="Texture2D" uid="uid://ddkopshloysrq" path="res://imagens/Spikey Porcupine/SpikeyPorcupineIdleSide.png" id="2_cr8n3"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7tfpf"]
+atlas = ExtResource("2_cr8n3")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vbfe1"]
+atlas = ExtResource("2_cr8n3")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ha53k"]
+atlas = ExtResource("2_cr8n3")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ox6ad"]
+atlas = ExtResource("2_cr8n3")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jevrk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7tfpf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vbfe1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ha53k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ox6ad")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uc4ma"]
+size = Vector2(14.5, 11)
+
+[node name="porco espinho" type="CharacterBody2D"]
+scale = Vector2(2, 2)
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("1_pwvxa")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jevrk")
+frame_progress = 0.568136
+
+[node name="porco_colision" type="CollisionShape2D" parent="."]
+position = Vector2(0.25, 2.5)
+shape = SubResource("RectangleShape2D_uc4ma")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(6.5, 1)
+target_position = Vector2(22.5, 22.5)
+collision_mask = 32
+
+[node name="visão_aly+parede" type="RayCast2D" parent="."]
+position = Vector2(6.5, 1)
+target_position = Vector2(15, 1.5)
+collision_mask = 36

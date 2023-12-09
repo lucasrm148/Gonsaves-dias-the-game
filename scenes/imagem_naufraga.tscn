@@ -1,0 +1,72 @@
+[gd_scene load_steps=5 format=3 uid="uid://ceqd5t0lxnvky"]
+
+[ext_resource type="Script" path="res://Control.gd" id="1_8yhdw"]
+[ext_resource type="Texture2D" uid="uid://b7gd4um25astu" path="res://DreamShaper_v7_sprite_palmeira_pixel_2.jpg" id="2_wjevm"]
+[ext_resource type="Texture2D" uid="uid://cwvy8rahkbycv" path="res://imagens/image-removebg-preview.png" id="3_i417i"]
+[ext_resource type="Texture2D" uid="uid://bbbvo1yvhvnto" path="res://imagens/42px/Play.png" id="4_hgiit"]
+
+[node name="controle naufrag" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8yhdw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(565, 316)
+texture = ExtResource("2_wjevm")
+
+[node name="Image-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(937, 580)
+rotation = 0.680678
+scale = Vector2(1.34529, 0.709478)
+texture = ExtResource("3_i417i")
+region_enabled = true
+region_rect = Rect2(0, -16, 120, 120)
+
+[node name="Image-removebg-preview2" type="Sprite2D" parent="."]
+position = Vector2(294, 592)
+rotation = 2.21657
+scale = Vector2(1.34529, 0.709478)
+texture = ExtResource("3_i417i")
+region_enabled = true
+region_rect = Rect2(0, -16, 120, 120)
+
+[node name="Image-removebg-preview2" type="Sprite2D" parent="Image-removebg-preview2"]
+position = Vector2(121.215, 290.96)
+rotation = 2.21657
+scale = Vector2(1.34529, 0.709478)
+texture = ExtResource("3_i417i")
+region_enabled = true
+region_rect = Rect2(0, -16, 120, 120)
+
+[node name="Play" type="Sprite2D" parent="."]
+position = Vector2(1058.75, 619)
+scale = Vector2(3.27381, 2.80952)
+texture = ExtResource("4_hgiit")
+
+[node name="Button" type="Button" parent="Play"]
+offset_left = -18.0
+offset_top = -20.0
+offset_right = 17.0
+offset_bottom = 19.0
+flat = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 107.0
+offset_right = 825.0
+offset_bottom = 345.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
+text = "Trabalho 2 cadeira de jogos digitais 
+aluno: lucas ribeiro madeira
+
+colaboradores: 
+"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(553, 377)

@@ -1,0 +1,90 @@
+[gd_scene load_steps=6 format=3 uid="uid://cp1ioogku8ue6"]
+
+[ext_resource type="Script" path="res://scenes/controles.gd" id="1_kfawl"]
+[ext_resource type="Texture2D" uid="uid://ydxjl3qqgx3d" path="res://imagens/6d2c28e0-fdf3-4623-884b-88c51d2ae3d0.png" id="1_qt8oy"]
+[ext_resource type="Texture2D" uid="uid://ly03afaov32u" path="res://imagens/UI books & more.png" id="2_wckby"]
+[ext_resource type="Texture2D" uid="uid://cq6wh7124hmof" path="res://imagens/42px/Next.png" id="3_v4hbg"]
+[ext_resource type="Texture2D" uid="uid://cswhm23g2e8oq" path="res://imagens/42px/Back.png" id="4_smmhd"]
+
+[node name="controles" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 21.0
+offset_top = 38.0
+offset_right = 8.0
+offset_bottom = 38.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+script = ExtResource("1_kfawl")
+metadata/_edit_use_anchors_ = true
+
+[node name="6d2c28e0-fdf3-4623-884b-88c51d2Ae3d0" type="Sprite2D" parent="."]
+position = Vector2(560, 237)
+scale = Vector2(1.12793, 1)
+texture = ExtResource("1_qt8oy")
+
+[node name="Sprite2D" type="Sprite2D" parent="6d2c28e0-fdf3-4623-884b-88c51d2Ae3d0"]
+position = Vector2(-30.1438, 379)
+scale = Vector2(9.64156, 5.375)
+texture = ExtResource("2_wckby")
+region_enabled = true
+region_rect = Rect2(768, 64, 48, 48)
+
+[node name="Next" type="Sprite2D" parent="."]
+position = Vector2(502, 637)
+scale = Vector2(2.88095, 1.59524)
+texture = ExtResource("3_v4hbg")
+
+[node name="Back" type="Sprite2D" parent="Next"]
+position = Vector2(-42, 1.25372)
+scale = Vector2(0.950413, 1.08955)
+texture = ExtResource("4_smmhd")
+
+[node name="Label" type="Label" parent="Next"]
+offset_left = -44.7769
+offset_top = -45.7612
+offset_right = 10.2231
+offset_bottom = -12.7612
+theme_override_colors/font_color = Color(0.639216, 0.239216, 0, 1)
+text = "Andar "
+
+[node name="up" type="Sprite2D" parent="."]
+position = Vector2(657, 634)
+rotation = 4.71239
+scale = Vector2(2.161, 2.28519)
+texture = ExtResource("3_v4hbg")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 623.0
+offset_top = 550.0
+offset_right = 705.0
+offset_bottom = 598.0
+theme_override_colors/font_color = Color(0.639216, 0.239216, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Pular"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 701.0
+offset_right = 592.0
+offset_bottom = 732.0
+action_mode = 0
+button_mask = 3
+text = "Voltar"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(562, 63)
+ignore_rotation = false
+enabled = false
+zoom = Vector2(1, 0.47)
+rotation_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]

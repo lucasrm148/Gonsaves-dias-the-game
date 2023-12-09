@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://brdr6a7cud11c"]
+
+[ext_resource type="Script" path="res://Control.gd" id="1_raxqg"]
+[ext_resource type="Texture2D" uid="uid://c71pc7t3yjgok" path="res://imagens/4b715b8a-85d1-4b86-a472-c11c5ec628d8.png" id="2_ign07"]
+[ext_resource type="Texture2D" uid="uid://bbbvo1yvhvnto" path="res://imagens/42px/Play.png" id="3_44rle"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_raxqg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(605, 418)
+scale = Vector2(1.15137, 1)
+texture = ExtResource("2_ign07")
+
+[node name="Play" type="Sprite2D" parent="Sprite2D"]
+position = Vector2(415.157, 152)
+scale = Vector2(3.27381, 2.80952)
+texture = ExtResource("3_44rle")
+
+[node name="Button" type="Button" parent="Sprite2D/Play"]
+offset_left = -16.7137
+offset_top = -16.3729
+offset_right = 18.2863
+offset_bottom = 22.6271
+button_mask = 7
+keep_pressed_outside = true
+flat = true
+
+[connection signal="button_down" from="Sprite2D/Play/Button" to="." method="_on_button_button_down"]

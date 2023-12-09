@@ -1,0 +1,159 @@
+[gd_scene load_steps=10 format=3 uid="uid://bvv2nb3wqagm7"]
+
+[ext_resource type="Texture2D" uid="uid://cjxo63nnju55y" path="res://imagens/5c7c9fa4-272a-45fa-bc23-b26293a357f7.png" id="1_5bk0j"]
+[ext_resource type="Script" path="res://scenes/menu.gd" id="1_lxs6v"]
+[ext_resource type="Texture2D" uid="uid://dlyshojtgl6eb" path="res://imagens/_2bb6d207-3625-4904-80dc-ffa616e836dc-removebg-preview.png" id="2_hrxbf"]
+[ext_resource type="Texture2D" uid="uid://ly03afaov32u" path="res://imagens/UI books & more.png" id="3_bqi7a"]
+
+[sub_resource type="FontVariation" id="FontVariation_51pd6"]
+
+[sub_resource type="SystemFont" id="SystemFont_d34t0"]
+font_italic = true
+generate_mipmaps = true
+force_autohinter = true
+hinting = 0
+subpixel_positioning = 2
+multichannel_signed_distance_field = true
+msdf_pixel_range = 35
+msdf_size = 49
+
+[sub_resource type="FontVariation" id="FontVariation_r2ntm"]
+base_font = SubResource("SystemFont_d34t0")
+
+[sub_resource type="LabelSettings" id="LabelSettings_w8sqy"]
+font = SubResource("FontVariation_r2ntm")
+font_size = 30
+font_color = Color(0.333333, 0.121569, 0.0980392, 1)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_fiaf6"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lxs6v")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(532, 351)
+scale = Vector2(1.16699, 0.919922)
+texture = ExtResource("1_5bk0j")
+
+[node name="2Bb6d207-3625-4904-80Dc-ffa616e836Dc-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(829, 481)
+scale = Vector2(0.24, 0.29)
+texture = ExtResource("2_hrxbf")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(192, 558)
+scale = Vector2(8.4375, 7.90625)
+texture = ExtResource("3_bqi7a")
+region_enabled = true
+region_rect = Rect2(512, 80, 48, 64)
+region_filter_clip_enabled = true
+
+[node name="Label" type="Label" parent="Sprite2D2"]
+anchors_preset = -1
+anchor_left = 0.093
+anchor_top = 0.035
+anchor_right = 0.093
+anchor_bottom = 0.035
+offset_left = -42.627
+offset_top = -37.4021
+offset_right = 447.373
+offset_bottom = 16.5979
+scale = Vector2(0.159815, 0.614151)
+theme_override_fonts/font = SubResource("FontVariation_51pd6")
+text = "tábua o jogo"
+label_settings = SubResource("LabelSettings_w8sqy")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Button" type="Button" parent="Sprite2D2/Label"]
+layout_mode = 1
+offset_left = 90.5109
+offset_top = 37.8132
+offset_right = 466.511
+offset_bottom = 129.813
+scale = Vector2(0.602336, 0.218613)
+pivot_offset = Vector2(3, 0)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+size_flags_stretch_ratio = 1.85
+theme_override_colors/font_color = Color(0.847059, 0.745098, 0.717647, 1)
+theme_override_colors/font_pressed_color = Color(0.8, 0, 0.160784, 1)
+theme_override_constants/outline_size = 7
+theme_override_constants/h_separation = -110
+theme_override_constants/icon_max_width = 10
+theme_override_font_sizes/font_size = 61
+action_mode = 0
+button_mask = 3
+text = "play"
+icon = SubResource("PlaceholderTexture2D_fiaf6")
+flat = true
+clip_text = true
+
+[node name="Button2" type="Button" parent="Sprite2D2/Label"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.196
+anchor_right = 0.745
+anchor_bottom = 1.0
+offset_left = -56.2384
+offset_top = 52.8947
+offset_right = 849.751
+offset_bottom = 168.895
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.237324, 0.170969)
+pivot_offset = Vector2(3, 0)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+size_flags_stretch_ratio = 1.85
+theme_override_colors/font_color = Color(0.847059, 0.745098, 0.717647, 1)
+theme_override_constants/outline_size = 21
+theme_override_constants/h_separation = 4
+theme_override_constants/icon_max_width = 14
+theme_override_font_sizes/font_size = 118
+action_mode = 0
+button_mask = 3
+text = "Creditos"
+icon = SubResource("PlaceholderTexture2D_fiaf6")
+flat = true
+clip_text = true
+
+[node name="Button3" type="Button" parent="Sprite2D2/Label"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.196
+anchor_right = 0.745
+anchor_bottom = 1.0
+offset_left = 4.88925
+offset_top = 72.5663
+offset_right = 490.879
+offset_bottom = 173.566
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.197876, 0.21387)
+pivot_offset = Vector2(3, 0)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+size_flags_stretch_ratio = 1.85
+theme_override_colors/font_color = Color(0.847059, 0.745098, 0.717647, 1)
+theme_override_constants/outline_size = 23
+theme_override_font_sizes/font_size = 107
+action_mode = 0
+button_mask = 7
+text = "Controles
+"
+icon = SubResource("PlaceholderTexture2D_fiaf6")
+flat = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(571, 496)
+
+[connection signal="button_down" from="Sprite2D2/Label/Button" to="." method="_on_button_button_down"]
+[connection signal="button_down" from="Sprite2D2/Label/Button2" to="." method="_on_button_2_button_down"]
+[connection signal="button_down" from="Sprite2D2/Label/Button3" to="." method="_on_button_3_button_down"]

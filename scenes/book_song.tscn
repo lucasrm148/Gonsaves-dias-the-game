@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bbpyw2axtcvar"]
 
-[ext_resource type="Script" path="res://livro_song.gd" id="1_mo8hh"]
+[ext_resource type="Script" path="res://scripts/livro_song.gd" id="1_mo8hh"]
 [ext_resource type="Texture2D" uid="uid://dlyshojtgl6eb" path="res://imagens/_2bb6d207-3625-4904-80dc-ffa616e836dc-removebg-preview.png" id="2_llpa8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6gpx1"]

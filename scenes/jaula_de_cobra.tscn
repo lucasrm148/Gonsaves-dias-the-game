@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dx3f62dwsna0b"]
+
+[ext_resource type="Script" path="res://scripts/jaula_cobra.gd" id="1_wmafd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i0kqw"]
+size = Vector2(681, 343)
+
+[node name="jaula de cobra" type="Node2D"]
+script = ExtResource("1_wmafd")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_i0kqw")
+
+[node name="Timer" type="Timer" parent="Area2D/CollisionShape2D"]
+wait_time = 2.0
+autostart = true
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="Area2D/CollisionShape2D/Timer" to="." method="_on_timer_timeout"]
